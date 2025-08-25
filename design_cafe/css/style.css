@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.body {
+  background-color: #e8d9bf;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 7.8% 0 2.9%;
+    position: absolute;
+    width: 100%;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 77px;
+}
+
+.logo {
+    width: 226px;
+}
+
+.header_nav a {
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+}
+
+.heading_h2 img {
+    width: auto;
+    height: 77px;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* メインビジュアル */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 105px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin: 60px 0;
+}
+
+.hero-text p {
+  width: 52%;
+  margin: 0 auto;
+}
+
+/* About */
+section h2 img {
+  width: auto;   /* 各画像の大きさをそろえる */
+  height: 57px;
+  display: inline-block;
+}
+
+.about {
+  padding: 104px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.about-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-text h2 img {
+  padding: 60px 0 62px; /* 下に余白を確保 */
+  width: auto;
+  height: 57px;
+  display: inline-block;
+}
+
+.about-text h3 {
+  font-size: 275%;
+  padding-bottom: 38px; 
+}
+
+/* Menu */
+.menu {
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.menu-item {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 200px;
+  margin: 0 50px ;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-list img {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Event */
+.event {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.event-list {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.event-list li {
+  margin: 10px 0;
+}
+
+.event-list span {
+  margin-right: 56px;
+}
+
+/* Access */
+.access {
+  text-align: center;
+}
+
+.map {
+  padding-top: 45px;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  color: #000;
+  height: 390px;
+  padding: 82px;
+  position: relative;
+}
+
+.footer img {
+    width: 222px;
+    height: auto;
+}
+
+.pagetop {
+  position: fixed;   /* ← 固定表示 */
+  right: 225px;
+  bottom: 225px;
+  z-index: 1000;     /* 他の要素より前に出す */
+}
+
+.pagetop img {
+  width: 125px;
+  height: auto;
+  display: block;
+}
