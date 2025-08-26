@@ -3,49 +3,49 @@
 body {
   background-color: #e8d9bf;
 }
-
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
 }
 .header_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 7.8% 0 2.9%;
-    position: absolute;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 7.8% 0 2.9%;
+  position: absolute;
+  width: 100%;
 }
 
 .header_nav ul {
-    display: flex;
-    gap: 77px;
+  display: flex;
+  gap: 77px;
 }
 
 .logo {
-    width: 226px;
+  width: 226px;
 }
 
 .header_nav a {
-    color: #fff;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    font-weight: bold;
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
 }
 
 .heading_h2 img {
-    width: auto;
-    height: 77px;
+  width: auto;
+  height: 77px;
 }
 
 .container {
-    max-width: 1000px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-/* キャッチコピー */
+/* メインビジュアル */
 .hero {
   display: flex;
   align-items: center;
@@ -54,7 +54,6 @@ body {
   margin-top: 105px;
   margin-bottom: 90px;
 }
-
 .hero-text .hero-text-sub {
   font-size: 30px;
 }
@@ -68,9 +67,12 @@ body {
 
 /* About */
 section h2 img {
-  width: auto;   /* 各画像の大きさをそろえる */
+  width: auto; /* 各画像の大きさをそろえる */
   height: 57px;
   display: inline-block;
+}
+
+.about {
 }
 
 .about-content {
@@ -79,6 +81,7 @@ section h2 img {
   align-items: center;
   margin-bottom: 95px;
 }
+
 .about-content img {
   width: 50%;
 }
@@ -88,20 +91,17 @@ section h2 img {
   text-align: left;
   padding-left: 50px;
 }
+
 .about-text h2 img {
-  padding: 0 0 62px; /* 下に余白を確保 */
+  padding: 60px 0 62px; /* 下に余白を確保 */
   width: auto;
   height: 57px;
   display: inline-block;
 }
+
 .about-text h3 {
   font-size: 275%;
-  font-weight: normal;
   padding-bottom: 38px;
-  line-height: 1.386;
-}
-.about-text p {
-  line-height: 1.625;
 }
 
 /* Menu */
@@ -125,9 +125,6 @@ section h2 img {
   color: #d30202;
   text-align: left;
   margin-top: -20px;
-}
-.menu-item p {
-  text-align: left;
 }
 
 /* Gallery */
@@ -170,7 +167,6 @@ section h2 img {
   display: flex;
   gap: 37px;
 }
-
 .event-list a {
   border-bottom: 2px solid #4f260b;
 }
@@ -197,15 +193,15 @@ iframe {
 }
 
 .footer img {
-    width: 222px;
-    height: auto;
+  width: 222px;
+  height: auto;
 }
 
 .pagetop {
-  position: fixed;   /* ← 固定表示 */
+  position: fixed; /* ← 固定表示 */
   right: 20px;
   bottom: 20px;
-  z-index: 1000;     /* 他の要素より前に出す */
+  z-index: 1000; /* 他の要素より前に出す */
 }
 
 .pagetop img {
@@ -214,11 +210,11 @@ iframe {
   display: block;
 }
 
-.footer_inner--column {
+.footer__inner--column {
   display: flex;
   gap: 64px;
   margin-bottom: 73px;
 }
-.copyright {
+.footer .copyright {
   text-align: center;
 }
