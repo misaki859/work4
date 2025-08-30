@@ -41,11 +41,39 @@
                     </li>
                 </ul>
             </nav>
-
+            <div class="hambuger">
+              <span></span>
+            </div>
+            <nav class="header_nav-sp">
+              <ul>
+                    <li>
+                        <!-- ボタンにして遷移させたいのでaタグ -->
+                        <a href="">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="">MENU</a>
+                    </li>
+                    <li>
+                        <a href="">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="">EVENT</a>
+                    </li>
+                    <li>
+                        <a href="">ACCESS</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <!-- 画像の部分 -->
         <div class="mainvisual">
+          <picture>
+            <source
+            srcset="./images/sp_main_vs@2x-100.jpg"
+            media="(max-width:768px)"
+            >
             <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+          </picture>
         </div>
     </header>
 
@@ -109,11 +137,12 @@
         <img src="./images/gallery@2x.png" alt="">
     </h2>
     <div class="gallery-list">
-      <img src="./images/pc_gallary_05-100.jpg" alt="">
-      <img src="./images/pc_gallary_04-100.jpg" alt="">
-      <img src="./images/pc_gallary_03-100.jpg" alt="">
-      <img src="./images/pc_gallary_02-100.jpg" alt="">
-      <img src="./images/pc_gallary_01-100.jpg" alt="">
+      <img class="pc" src="./images/pc_gallary_05-100.jpg" alt="パソコン用の画像">
+      <img class="pc" src="./images/pc_gallary_04-100.jpg" alt="パソコン用の画像">
+      <img class="pc" src="./images/pc_gallary_03-100.jpg" alt="パソコン用の画像">
+      <img class="pc" src="./images/pc_gallary_02-100.jpg" alt="パソコン用の画像">
+      <img class="pc" src="./images/pc_gallary_01-100.jpg" alt="パソコン用の画像">
+      <img class="sp" src="./images/mobile_gallery-100.jpg" alt="スマートフォン用の画像">
     </div>
   </section>
 
@@ -180,5 +209,15 @@
         <img src="./images/to_top@2x.png" alt="PAGE TOP">
    </a>
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script>
+    $(function () {
+      //ハンバーガーメニュー
+      $(".hambuger").click(function () {
+        $(".hambuger").toggleClass("open");
+        $(".header_nav-sp").fadeToggle();
+      });
+    });
+   </script>
 </body>
 </html>
