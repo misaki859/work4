@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -25,19 +35,19 @@
                 <ul>
                     <li>
                         <!-- ボタンにして遷移させたいのでaタグ -->
-                        <a href="">ABOUT US</a>
+                        <a href="#about">ABOUT US</a>
                     </li>
                     <li>
-                        <a href="">MENU</a>
+                        <a href="#menu">MENU</a>
                     </li>
                     <li>
-                        <a href="">GALLERY</a>
+                        <a href="#gallery">GALLERY</a>
                     </li>
                     <li>
-                        <a href="">EVENT</a>
+                        <a href="#event">EVENT</a>
                     </li>
                     <li>
-                        <a href="">ACCESS</a>
+                        <a href="#access">ACCESS</a>
                     </li>
                 </ul>
             </nav>
@@ -48,19 +58,19 @@
               <ul>
                     <li>
                         <!-- ボタンにして遷移させたいのでaタグ -->
-                        <a href="">ABOUT US</a>
+                        <a href="#about">ABOUT US</a>
                     </li>
                     <li>
-                        <a href="">MENU</a>
+                        <a href="#menu">MENU</a>
                     </li>
                     <li>
-                        <a href="">GALLERY</a>
+                        <a href="#gallery">GALLERY</a>
                     </li>
                     <li>
-                        <a href="">EVENT</a>
+                        <a href="#event">EVENT</a>
                     </li>
                     <li>
-                        <a href="">ACCESS</a>
+                        <a href="#access">ACCESS</a>
                     </li>
                 </ul>
             </nav>
@@ -73,6 +83,13 @@
             media="(max-width:768px)"
             >
             <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+          </picture>
+          <picture>
+            <source
+            srcset="./images/sp_main_vs_2@2x-100.jpg"
+            media="(max-width:768px)"
+            >
+            <img src="./images/slider_2.jpg" alt="カフェ店内の様子">
           </picture>
         </div>
     </header>
@@ -101,6 +118,15 @@
       <img src="./images/about_us.png" alt="カフェラテ">
       <div class="about-text">
         <h2><img src="./images/about_us@2x.png" alt="ABOUT US"></h2>
+        <h3>私たちが提供する<br>こだわりのコーヒー</h3>
+        <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+      </div>
+    </div>
+
+    <div class="about-content-sp">
+      <h2><img src="./images/about_us@2x.png" alt="ABOUT US"></h2>
+      <img src="./images/about_us@2x-100.jpg" alt="カフェラテ">
+      <div class="about-text wrapper">
         <h3>私たちが提供する<br>こだわりのコーヒー</h3>
         <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
       </div>
@@ -134,15 +160,51 @@
   <!-- Gallery -->
   <section id="gallery" class="gallery">
     <h2>
-        <img src="./images/gallery@2x.png" alt="">
+        <img src="./images/gallery@2x.png" alt="GALLERY">
     </h2>
     <div class="gallery-list">
-      <img class="pc" src="./images/pc_gallary_05-100.jpg" alt="パソコン用の画像">
-      <img class="pc" src="./images/pc_gallary_04-100.jpg" alt="パソコン用の画像">
-      <img class="pc" src="./images/pc_gallary_03-100.jpg" alt="パソコン用の画像">
-      <img class="pc" src="./images/pc_gallary_02-100.jpg" alt="パソコン用の画像">
-      <img class="pc" src="./images/pc_gallary_01-100.jpg" alt="パソコン用の画像">
-      <img class="sp" src="./images/mobile_gallery-100.jpg" alt="スマートフォン用の画像">
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_05-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_05-100.jpg" alt="パソコン用の画像">
+      </picture>
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_04-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_04-100.jpg" alt="パソコン用の画像">
+      </picture>
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_03-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_03-100.jpg" alt="パソコン用の画像">
+      </picture>
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_02-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_02-100.jpg" alt="パソコン用の画像">
+      </picture>
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_01-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_01-100.jpg" alt="パソコン用の画像">
+      </picture>
+      <picture>
+        <source
+        srcset="./images/mobile_gallary_01-100.jpg"
+        media="(max-width:768px)"
+        >
+        <img src="./images/pc_gallary_01-100.jpg" alt="パソコン用の画像">
+      </picture>
     </div>
   </section>
 
@@ -154,15 +216,15 @@
     <ul class="event-list">
       <li>
         <p>2020.06.23</p>
-        <a href="">7月はイベント出店のため0/0お休みします</a>
+        <p class="event-item-ttl"><a href="">7月はイベント出店のため0/0お休みします</a></p>
       </li>
       <li>
         <p>2020.03.15</p>
-        <a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+        <p class="event-item-ttl"><a href="">春の新商品新発売。話題のあのブランドとコラボ</a></p>
       </li>
       <li>
         <p>2020.02.06</p>
-        <a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
+        <p class="event-item-ttl"><a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a></p>
       </li>
     </ul>
   </section>
@@ -210,6 +272,7 @@
    </a>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script>
     $(function () {
       //ハンバーガーメニュー
@@ -217,7 +280,34 @@
         $(".hambuger").toggleClass("open");
         $(".header_nav-sp").fadeToggle();
       });
+
+      //slick
+      $(".mainvisual").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true
+      });
+      $(".gallery-list").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
+      });
     });
-   </script>
+    </script>
 </body>
 </html>
